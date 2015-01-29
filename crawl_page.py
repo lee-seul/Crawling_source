@@ -69,8 +69,7 @@ def clean_data(data):
 
 
 def main():
-    url = 'http://www.assembly.go.kr/assm/memact/congressman/memCond/memCondListAjax.do?currentPage=1&rowPerPage=500'
-    urls = full_url(list_page(url))
+    urls = full_list_page()
     crawl = fetch_html(urls)
 
     return crawl

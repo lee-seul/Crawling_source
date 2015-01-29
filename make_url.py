@@ -27,11 +27,11 @@ def full_url(url_parameter):
 
     return craw_url
 
-def main():
-    url = 'http://www.assembly.go.kr/assm/memact/congressman/memCond/memCondListAjax.do?currentPage=1&rowPerPage=500'
+def full_list_page(url):
     urls = full_url(list_page(url))
 
     return urls
 
 if __name__ == "__main__":
-   print main()
+    url = 'http://www.assembly.go.kr/assm/memact/congressman/memCond/memCondListAjax.do?currentPage=1&rowPerPage=500'
+    print full_list_page()
